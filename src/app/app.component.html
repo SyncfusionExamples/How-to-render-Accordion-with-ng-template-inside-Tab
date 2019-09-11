@@ -1,0 +1,68 @@
+<div class="control-section e-tab-section">
+    <div class="e-sample-resize-container">
+        <!-- Render the Tab Component -->
+        <ejs-tab id="tab_default" heightAdjustMode='Auto'>
+            <e-tabitems>
+                <e-tabitem [header]='headerText[0]'>
+                    <ng-template #content>
+                        <ng-container *ngTemplateOutlet="accordion"></ng-container>
+                    </ng-template>
+                </e-tabitem>
+                <e-tabitem [header]='headerText[1]'>
+                    <ng-template #content>
+                        Facebook is an online social networking service headquartered in Menlo Park, California. Its
+                        website was launched on February
+                        4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo
+                        Saverin, Andrew McCollum,
+                        Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s membership
+                        to Harvard students,
+                        but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University.
+                        It gradually added support
+                        for students at various other universities and later to high-school students.
+                    </ng-template>
+                </e-tabitem>
+                <e-tabitem [header]='headerText[2]'>
+                    <ng-template #content>
+                        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that
+                        operates under a subscription
+                        business model. It uses the Internet to send text messages, images, video, user location and
+                        audio media messages to
+                        other users using standard cellular mobile numbers. As of February 2016, WhatsApp had a user
+                        base of up to one billion,[10]
+                        making it the most globally popular messaging application. WhatsApp Inc., based in Mountain
+                        View, California, was acquired
+                        by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
+                    </ng-template>
+                </e-tabitem>
+            </e-tabitems>
+        </ejs-tab>
+    </div>
+</div>
+
+<ng-template #accordion>
+    <ejs-accordion>
+        <e-accordionitems>
+            <e-accordionitem expanded='true'>
+                <ng-template #header>
+                    <div>ASP.NET</div>
+                </ng-template>
+                <ng-template #content>
+                    <div>Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web
+                        applications and XML
+                        Web services.</div>
+                </ng-template>
+            </e-accordionitem>
+            <e-accordionitem>
+                <ng-template #header>
+                    <div>ASP.NET MVC</div>
+                </ng-template>
+                <ng-template #content>
+                    <div>The Model-View-Controller (MVC) architectural pattern separates an application into three main
+                        components: the
+                        model, the view, and the controller.
+                    </div>
+                </ng-template>
+            </e-accordionitem>
+        </e-accordionitems>
+    </ejs-accordion>
+</ng-template>
